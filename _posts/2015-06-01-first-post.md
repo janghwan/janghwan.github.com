@@ -11,8 +11,7 @@ object Test extends Controller with Authentication {
   def test = Authenticated(Role.User) ({
     implicit authReq =>
       val conf = new Configuration()
-      val ret = conf.get("yarn.resourcemanager.ha.rm-ids")
-//      val ret = MerchantAdvertiser.get("Sephora.com, Inc.", models.Product.ADVERTISER_ID_LINKSHARE)
+//      val ret = conf.get("yarn.resourcemanager.ha.rm-ids")
       Ok(ret.toString)
   })
 }
