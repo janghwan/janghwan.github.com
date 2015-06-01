@@ -6,6 +6,7 @@ categories: misc
 ---
 첫번째 포스트입니다.
 
+
 {% highlight scala %}
 object Test extends Controller with Authentication {
   def test = Authenticated(Role.User) ({
@@ -15,6 +16,7 @@ object Test extends Controller with Authentication {
       Ok(ret.toString)
   })
 }
+
 
 
 {% endhighlight %}
