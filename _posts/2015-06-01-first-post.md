@@ -20,4 +20,4 @@ object Test extends Controller with Authentication {
 
 {% endhighlight %}
 
-[Chloe]({{site.url}}/assets/chloe-moretz.jpg)
+![Chloe]({{site.url}}/assets/chloe-moretz.jpg)
