@@ -1,25 +1,23 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2015-06-01 09:35:27
-categories: jekyll update
+title:  "First Post!"
+date:   2015-06-01 10:12:27
+categories: misc
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+첫번째 포스트입니다.
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+{% highlight scala %}
+object Test extends Controller with Authentication {
+  def test = Authenticated(Role.User) ({
+    implicit authReq =>
+      val conf = new Configuration()
+      val ret = conf.get("yarn.resourcemanager.ha.rm-ids")
+//      val ret = MerchantAdvertiser.get("Sephora.com, Inc.", models.Product.ADVERTISER_ID_LINKSHARE)
+      Ok(ret.toString)
+  })
+}
 
-Jekyll also offers powerful support for code snippets:
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
+[Chloe]({{site.url}}/assets/chloe-moretz.jpg)
 {% endhighlight %}
 
-Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll’s dedicated Help repository][jekyll-help].
-
-[jekyll]:      http://jekyllrb.com
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-help]: https://github.com/jekyll/jekyll-help
