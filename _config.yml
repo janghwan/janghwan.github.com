@@ -21,7 +21,7 @@ description: "»Cheesespy Blog« is incredible blog which is under construction.
 
 # This URL is the main adresse. Don't include a slash at the end.
 #
-url: "http://cheesespy.github.io"
+url: "http://www.silvervinyl.com"
 baseurl: ""
 
 # This is for the editing function in _/includes/improve_content.html
@@ -34,7 +34,7 @@ improve_content: https://github.com/cheesespy/cheesespy.github.com/settings
 # Example: <img src="{{ site.urlimg }}/{{ post.image.title }}">
 # Markdown-Example for posts ![Image Text]({{ site.urlimg }}/image.jpg)
 #
-urlimg: "http://cheesespy.github.io/images/"
+urlimg: "http://www.silvervinyl.com/images/"
 
 
 # Logo size is 600x80 pixels
